@@ -1,0 +1,5 @@
+rootProject.name = "MyTabling"
+include ':common:ui'
+include ':feature:recent'
+include ':feature:save'
+include ':app'
