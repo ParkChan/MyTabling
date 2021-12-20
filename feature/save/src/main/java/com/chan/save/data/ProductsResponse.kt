@@ -1,5 +1,6 @@
 package com.chan.save.data
 
+import com.chan.save.domain.Product
 import com.google.gson.annotations.SerializedName
 
 data class ProductsResponse(
@@ -46,4 +47,21 @@ data class ProductResponse(
 
     @SerializedName("waitingCount")
     val waitingCount: Int = 0
-)
+) : MapToDomain<Product> {
+    override fun mapToDomain(): Product = Product(
+        restaurantIdx = restaurantIdx,
+        thumbnail = thumbnail,
+        classification = classification,
+        restaurantName = restaurantName,
+        rating = rating,
+        reviewCount = reviewCount,
+        summaryAddress = summaryAddress,
+        isQuickBooking = isQuickBooking,
+        isRemoteWaiting = isRemoteWaiting,
+        useWaiting = useWaiting,
+        useBooking = useBooking,
+        isNew = isNew,
+        waitingCount = waitingCount
+    )
+
+}

@@ -8,14 +8,14 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class ProductDataSourceImplTest {
+class SaveProductDataSourceImplTest {
 
     private val tablingApi: TablingApi = mockk(relaxed = true)
-    private lateinit var productDataSourceImpl: ProductDataSourceImpl
+    private lateinit var productDataSourceImpl: SaveProductDataSourceImpl
 
     @BeforeEach
     fun setup() {
-        productDataSourceImpl = ProductDataSourceImpl(tablingApi)
+        productDataSourceImpl = SaveProductDataSourceImpl(tablingApi)
     }
 
     @Test
