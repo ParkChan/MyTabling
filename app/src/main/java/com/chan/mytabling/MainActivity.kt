@@ -23,7 +23,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                         navController.navigate(R.id.action_save_fragment_to_recent_fragment_graph)
                 }
             }
-
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })

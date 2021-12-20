@@ -54,7 +54,6 @@ dependencies {
     implementation AndroidXConfig.navigationFragmentKtx
     implementation AndroidXConfig.navigationUiKtx
     implementation GoogleConfig.material
-    implementation AndroidXConfig.viewpager2
 
     implementation TestConfig.junitJupiterApi
     implementation TestConfig.junitJupiterEngine
