@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragment_save"
-        android:name="com.chan.save.SaveFragment"
+        android:name="com.chan.save.ui.SaveFragment"
         android:label="@string/title_save"
         tools:layout="@layout/fragment_save">
         <action

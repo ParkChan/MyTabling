@@ -4,7 +4,7 @@ import com.chan.save.data.ProductsResponse
 import retrofit2.http.GET
 
 interface TablingApi {
-    @GET("/save")
+    @GET("save")
     suspend fun fetchProduct(
     ): ProductsResponse
 }

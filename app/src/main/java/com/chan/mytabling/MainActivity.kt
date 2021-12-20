@@ -5,7 +5,10 @@ import androidx.navigation.findNavController
 import com.chan.mytabling.databinding.ActivityMainBinding
 import com.chan.ui.BaseActivity
 import com.google.android.material.tabs.TabLayout
+import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +19,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         val tabLayout = binding.tabLayout
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
+                Timber.d("tab >>>>>> ${tab.text}")
                 when (tab.text) {
                     getString(R.string.title_save) ->
                         navController.navigate(R.id.action_recent_fragment_to_save_fragment_graph)

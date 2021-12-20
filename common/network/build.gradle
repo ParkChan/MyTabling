@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'de.mannodermaus.android-junit5'
     id 'dagger.hilt.android.plugin'
 }
 
@@ -11,11 +10,10 @@ apply from: "../../android.gradle"
 android {
     buildTypes {
         debug {
-            buildConfigField "String", "BASE_URL", '"https://my-json-server.typicode.com/tabling/tabling_mobile_test"'
+            buildConfigField "String", "BASE_URL", '"https://my-json-server.typicode.com/tabling/tabling_mobile_test/"'
         }
     }
 }
-
 dependencies {
     implementation DaggerHiltConfig.android
     kapt DaggerHiltConfig.compiler

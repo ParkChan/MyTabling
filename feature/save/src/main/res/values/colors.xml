@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="thumbnail_text_bg_color">#20000000</color>
+    <color name="category_text_color">#95979d</color>
+    <color name="addr_text_color">#95979d</color>
+    <color name="store_common_text_color">#1b1b1b</color>
+    <color name="waiting_text_color">#5f6b7d</color>
+    <color name="thumbnail_text_color">#ded8d8</color>
+
 </resources>

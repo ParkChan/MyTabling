@@ -1,4 +1,4 @@
-package com.chan.network
+package com.chan.networkmodule
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
