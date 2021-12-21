@@ -1,4 +1,4 @@
-package com.chan.save.ui.util
+package com.chan.recent.ui.util
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer

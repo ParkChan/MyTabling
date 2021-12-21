@@ -1,6 +1,5 @@
-package com.chan.save.data
+package com.chan.recent.data
 
-import com.chan.recent.data.ProductsResponse
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import org.junit.jupiter.api.Assertions.assertEquals
