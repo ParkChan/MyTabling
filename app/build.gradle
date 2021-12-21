@@ -45,7 +45,6 @@ android {
 dependencies {
 
     implementation project(":common:ui")
-    implementation project(":common:network")
     implementation project(":feature:save")
     implementation project(":feature:recent")
 

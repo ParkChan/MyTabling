@@ -23,7 +23,7 @@ fun bindingGlideThumb(imageView: ImageView, uri: String?) {
 @BindingAdapter("setRatingAndReviewCnt")
 fun bindingRatingAndReviewCnt(textView: TextView, product: Product) {
     textView.text = String.format(
-        textView.resources.getString(R.string.rating_and_review),
+        textView.resources.getString(R.string.rating_review),
         product.rating,
         product.reviewCount
     )
@@ -36,10 +36,10 @@ fun bindingIsBooking(textView: TextView, product: Product) {
             textView.text = textView.resources.getText(R.string.booking)
             textView.visibility = View.VISIBLE
         } else {
-            textView.visibility = View.INVISIBLE
+            textView.visibility = View.GONE
         }
     } else {
-        textView.visibility = View.INVISIBLE
+        textView.visibility = View.GONE
     }
 }
 
@@ -50,9 +50,9 @@ fun bindingIsRemoteWaiting(textView: TextView, product: Product) {
             textView.text = textView.resources.getText(R.string.remote_waiting)
             textView.visibility = View.VISIBLE
         } else {
-            textView.visibility = View.INVISIBLE
+            textView.visibility = View.GONE
         }
     } else {
-        textView.visibility = View.INVISIBLE
+        textView.visibility = View.GONE
     }
 }

@@ -1,7 +1,7 @@
 <resources>
     <string name="waiting_n">대기 없음</string>
     <string name="waiting_Y">대기 %s 팀</string>
-    <string name="rating_and_review">별점 %s (%s)</string>
+    <string name="rating_review">별점 %s (%s)</string>
     <string name="remote_waiting">원격줄서기</string>
     <string name="booking">즉시예약</string>
 </resources>
