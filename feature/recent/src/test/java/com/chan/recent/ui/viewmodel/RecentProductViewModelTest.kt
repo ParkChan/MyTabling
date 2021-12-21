@@ -1,10 +1,10 @@
-package com.chan.save.ui.viewmodel
+package com.chan.recent.ui.viewmodel
 
 import com.chan.recent.domain.Product
 import com.chan.recent.domain.RecentProductUseCaseImpl
 import com.chan.recent.ui.RecentProductViewModel
-import com.chan.save.ui.util.InstantExecutorExtension
-import com.chan.save.ui.util.getOrAwaitValue
+import com.chan.recent.ui.util.InstantExecutorExtension
+import com.chan.recent.ui.util.getOrAwaitValue
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking

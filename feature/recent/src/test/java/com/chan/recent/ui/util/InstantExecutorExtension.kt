@@ -1,4 +1,4 @@
-package com.chan.save.ui.util
+package com.chan.recent.ui.util
 
 import androidx.arch.core.executor.ArchTaskExecutor
 import androidx.arch.core.executor.TaskExecutor
