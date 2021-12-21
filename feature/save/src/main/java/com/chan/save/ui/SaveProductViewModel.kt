@@ -28,7 +28,7 @@ class SaveProductViewModel @Inject constructor(
             .onSuccess {
                 _products.value = it
             }.onFailure {
-                Timber.d("${it.message}")
+                Timber.e("${it.message}")
             }
     }
 }

@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_save">
         <action
             android:id="@+id/action_save_fragment_to_recent_fragment_graph"
-            app:destination="@id/fragment_recent" />
+            app:destination="@id/fragment_recent"
+            />
     </fragment>
 
     <fragment
@@ -22,7 +23,10 @@
         tools:layout="@layout/fragment_recent">
         <action
             android:id="@+id/action_recent_fragment_to_save_fragment_graph"
-            app:destination="@id/fragment_save" />
+            app:destination="@id/fragment_save"
+            app:popUpTo="@+id/fragment_save"
+            app:popUpToInclusive="true"
+            />
 
     </fragment>
 
