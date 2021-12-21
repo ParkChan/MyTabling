@@ -6,12 +6,12 @@
     <data>
 
         <variable
-            name="saveProduct"
-            type="com.chan.save.domain.Product" />
+            name="recentProduct"
+            type="com.chan.recent.domain.Product" />
 
         <variable
-            name="saveProductViewModel"
-            type="com.chan.save.ui.SaveProductViewModel" />
+            name="recentProductViewModel"
+            type="com.chan.recent.ui.RecentProductViewModel" />
 
     </data>
 
@@ -22,7 +22,7 @@
 
         <ImageView
             android:id="@+id/iv_thumb"
-            setGlideThumb="@{saveProduct.thumbnail}"
+            setGlideThumb="@{recentProduct.thumbnail}"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
@@ -39,7 +39,7 @@
             app:layout_constraintHeight_percent="0.25"
             android:gravity="center"
             android:layout_marginStart="@dimen/common_margin"
-            android:text="@{saveProduct.classification}"
+            android:text="@{recentProduct.classification}"
             android:textColor="@color/category_text_color"
             android:textSize="@dimen/common_text_size"
             app:layout_constraintBottom_toTopOf="@id/tv_name"
@@ -53,7 +53,7 @@
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.25"
             android:gravity="center"
-            android:text="@{saveProduct.restaurantName}"
+            android:text="@{recentProduct.restaurantName}"
             android:textColor="@color/store_common_text_color"
             android:textSize="@dimen/common_text_size"
             app:layout_constraintBottom_toTopOf="@id/tv_rating"
@@ -63,7 +63,7 @@
 
         <TextView
             android:id="@+id/tv_rating"
-            setRatingAndReviewCnt="@{saveProduct}"
+            setRatingAndReviewCnt="@{recentProduct}"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.25"
@@ -81,7 +81,7 @@
             app:layout_constraintHeight_percent="0.25"
             android:gravity="center"
             android:layout_marginStart="@dimen/common_margin"
-            android:text="@{saveProduct.summaryAddress}"
+            android:text="@{recentProduct.summaryAddress}"
             android:textColor="@color/addr_text_color"
             android:textSize="@dimen/common_text_size"
             app:layout_constraintStart_toEndOf="@id/tv_rating"
@@ -90,12 +90,12 @@
 
         <TextView
             android:id="@+id/tv_remote_waiting"
-            setRemoteWaiting="@{saveProduct}"
+            setRemoteWaiting="@{recentProduct}"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.25"
             android:gravity="center"
-            android:background="@drawable/rv_save_item_wating_rect_bg"
+            android:background="@drawable/rv_item_wating_rect_bg"
             android:textColor="@color/waiting_text_color"
             android:textSize="@dimen/common_text_size"
             android:paddingStart="@dimen/common_padding"
@@ -107,7 +107,7 @@
 
         <TextView
             android:id="@+id/tv_booking"
-            setUseBooking="@{saveProduct}"
+            setUseBooking="@{recentProduct}"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.25"
@@ -115,7 +115,7 @@
             android:paddingStart="@dimen/common_padding"
             android:paddingEnd="@dimen/common_padding"
             android:layout_marginStart="@dimen/common_margin"
-            android:background="@drawable/rv_save_item_wating_rect_bg"
+            android:background="@drawable/rv_item_wating_rect_bg"
             android:textColor="@color/waiting_text_color"
             android:textSize="@dimen/common_text_size"
             app:layout_constraintBottom_toBottomOf="@id/iv_thumb"

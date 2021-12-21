@@ -6,7 +6,7 @@
     <data>
 
         <variable
-            name="viewModel"
+            name="saveProductViewModel"
             type="com.chan.save.ui.SaveProductViewModel" />
 
     </data>

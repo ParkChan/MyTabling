@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/fragment_recent"
-        android:name="com.chan.recent.RecentFragment"
+        android:name="com.chan.recent.ui.RecentFragment"
         android:label="@string/title_recent"
         tools:layout="@layout/fragment_recent">
         <action
