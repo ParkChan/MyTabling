@@ -57,3 +57,15 @@ fun bindingIsRemoteWaiting(textView: TextView, product: Product) {
         textView.visibility = View.GONE
     }
 }
+
+@BindingAdapter("setWaitingCount")
+fun bindingWaitingCount(textView: TextView, waitingCount: Int) {
+    if (waitingCount > 0) {
+        textView.text = String.format(
+            textView.resources.getString(R.string.waiting_y),
+            waitingCount
+        )
+    } else {
+        textView.text = textView.resources.getString(R.string.waiting_n)
+    }
+}
