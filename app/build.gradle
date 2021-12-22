@@ -5,6 +5,7 @@ plugins {
     id 'de.mannodermaus.android-junit5'
     id 'dagger.hilt.android.plugin'
     id 'com.github.ben-manes.versions'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {

@@ -48,7 +48,10 @@ object ProjectConfig {
     const val androidJunit5 = "de.mannodermaus.gradle.plugins:android-junit5:${Version.junit5}"
     const val hiltAndroidGradlePlugin =
         "com.google.dagger:hilt-android-gradle-plugin:${Version.hilt}"
-    const val gradleVersionPlugin = "com.github.ben-manes:gradle-versions-plugin:${Version.gradleVersionsPlugin}"
+    const val gradleVersionPlugin =
+        "com.github.ben-manes:gradle-versions-plugin:${Version.gradleVersionsPlugin}"
+    const val navigationSafeArgsGradlePlugin =
+        "androidx.navigation:navigation-safe-args-gradle-plugin:${Version.navigation}"
 }
 
 object AndroidConfig {
@@ -60,7 +63,6 @@ object AndroidConfig {
     const val runnerBuilder = "runnerBuilder"
     const val androidJunitRunner = "androidx.test.runner.AndroidJUnitRunner"
     const val androidJunit5Builder = "de.mannodermaus.junit5.AndroidJUnit5Builder"
-
 }
 
 object CoroutineConfig {
@@ -102,12 +104,14 @@ object AndroidXConfig {
     const val viewpager2 = "androidx.viewpager2:viewpager2:${Version.viewpager2}"
     const val recyclerView = "androidx.recyclerview:recyclerview:${Version.recyclerView}"
 
-    const val viewmodelSavedstate = "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Version.viewmodelSavedstate}"
+    const val viewmodelSavedstate =
+        "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Version.viewmodelSavedstate}"
 
     const val roomKtx = "androidx.room:room-ktx:${Version.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Version.room}"
 
-    const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
+    const val navigationFragmentKtx =
+        "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
     const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Version.navigation}"
 
 }
